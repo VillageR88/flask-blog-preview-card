@@ -2,7 +2,7 @@ from flask_frozen import Freezer
 from app import create_app
 
 app = create_app()
-app.config['FREEZER_BASE_URL'] = '../build'  # Set the base URL for the freezer
+app.config['FREEZER_BASE_URL'] = '.'  # Set the base URL for the freezer
 
 freezer = Freezer(app)
 

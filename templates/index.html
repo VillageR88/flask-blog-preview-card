@@ -11,20 +11,22 @@
 </head>
 
 <body>
-    <div class="mainComponent">
+    <main class="mainComponent">
         <img width="336" height="201" class="image1"
             src="{{ url_for('static', filename='images/illustration-article.svg') }}" alt="">
         <div class="secondDiv">
-            <span class="learning">{{ learning }}</span>
+            <h1 class="learning">{{ learning }}</h1>
             <span class="published">{{ published_date }}</span>
-            <h1>{{ title }}</h1>
+            <button type="button">
+                <span>{{ title }}</span>
+            </button>
             <p>{{ description }}</p>
         </div>
         <div class="thirdDiv">
             <img class="image2" src="{{ url_for('static', filename='images/image-avatar.webp') }}" alt="">
             <span class="nameSpan">{{ author }}</span>
         </div>
-    </div>
+    </main>
 </body>
 
 </html>
