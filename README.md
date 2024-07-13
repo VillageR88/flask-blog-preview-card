@@ -1,4 +1,4 @@
-# Flask Python Template (Work in Progress)
+# Flask Python Template
 
 This is a template for a Flask Python application.
 
@@ -13,26 +13,40 @@ A basic template for starting a Flask Python project. This template includes the
    ```sh
    git clone https://github.com/yourusername/flask-python-template.git
    cd flask-python-template
+   ```
+
+   **Note:** If you already have a previous version of the repository cloned, make sure to delete the old folder before cloning the new one.
+
+   Alternatively, you can clone the repository without the `.git` folder by using the following command:
+
+   ```sh
+   git clone --depth=1 https://github.com/yourusername/flask-python-template.git
+   ```
 
 2. **Create a virtual environment**:
 
-   ```sh
-   python3 -m venv venv
-   source venv/bin/activate
+   - On macOS/Linux:
+
+     ```sh
+     python3 -m venv venv
+     source venv/bin/activate
+     ```
+
+   - On Windows:
+
+     ```sh
+     python -m venv venv
+     .\venv\Scripts\activate
+     ```
 
 3. **Install the dependencies**:
 
    ```sh
     pip install -r requirements.txt
+    ```
 
-4. **Create a `.env` file**:
-
-   ```sh
-   cp .env.example .env
-   ```
-
-5. **Run the application**:
+4. **Run the application**:
 
    ```sh
-    python app.py
+    flask run
     ```
